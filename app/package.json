@@ -1,0 +1,12 @@
+{
+  "name": "full-stack-app",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "repository": "https://github.com/pcandido/full-stack",
+  "author": "Paulo Cândido",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
