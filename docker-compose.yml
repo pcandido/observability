@@ -1,0 +1,12 @@
+services:
+  app:
+    image: pcandido/full-stack/app
+    build: ./app
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health-check"]
+      start_period: 5s
+      interval: 10s
+      timeout: 10s
+      retries: 3
