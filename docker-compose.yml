@@ -28,9 +28,6 @@ services:
       - 80:80
     networks:
       - reverse-proxy
-    depends_on:
-      app:
-        condition: service_healthy
 
   elasticsearch:
     image: pcandido/full-stack/elasticsearch
