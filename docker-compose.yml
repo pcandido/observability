@@ -1,11 +1,15 @@
 networks:
   reverse-proxy:
+  monitor:
+
+volumes:
+  elasticsearch-volume:
 
 services:
   app:
     image: pcandido/full-stack/app
     container_name: app
-    build: ./app
+    build: app
     volumes:
       - ./app/logs:/app/logs
     ports:
@@ -16,7 +20,7 @@ services:
   nginx:
     image: pcandido/full-stack/nginx
     container_name: nginx
-    build: ./nginx
+    build: nginx
     volumes:
       - ./nginx/config:/etc/nginx/conf.d
       - ./nginx/logs:/var/log/nginx
@@ -27,3 +31,19 @@ services:
     depends_on:
       app:
         condition: service_healthy
+
+  elasticsearch:
+    image: pcandido/full-stack/elasticsearch
+    container_name: elasticsearch
+    build:
+      context: elasticsearch
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - elasticsearch-volume:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - monitor
