@@ -61,3 +61,25 @@ services:
     depends_on:
       elasticsearch:
         condition: service_healthy
+
+  logstash:
+    image: pcandido/full-stack/logstash
+    container_name: logstash
+    build:
+      context: logstash
+      args:
+        ELK_VERSION: $ELK_VERSION
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    ports:
+      - 9600:9600
+    expose: 
+      - 5044
+    networks:
+      - monitor
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
