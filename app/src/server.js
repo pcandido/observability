@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 app.get('/health-check', (req, res) => {
-  res.status(200).end()
+  res.status(200).send('App is up!')
 })
 
 app.get('/', (req, res) => {
