@@ -1,0 +1,15 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/nginx/*.log
+      - /var/log/app/app.log
+
+output.logstash:
+  enabled: true
+  hosts: ["logstash:5044"]
+
+http:
+  enabled: true
+  port: 5067
+  host: 0.0.0.0

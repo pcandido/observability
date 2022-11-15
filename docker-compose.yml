@@ -76,10 +76,30 @@ services:
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
     ports:
       - 9600:9600
-    expose: 
+    expose:
       - 5044
     networks:
       - monitor
     depends_on:
       elasticsearch:
+        condition: service_healthy
+
+  filebeat:
+    image: pcandido/full-stack/filebeat
+    container_name: filebeat
+    build:
+      context: filebeat
+      args:
+        ELK_VERSION: $ELK_VERSION
+    entrypoint: "filebeat -e -strict.perms=false"
+    volumes:
+      - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./nginx/logs:/var/log/nginx
+      - ./app/logs:/var/log/app
+    ports:
+      - 5067:5067
+    networks:
+      - monitor
+    depends_on:
+      logstash:
         condition: service_healthy
