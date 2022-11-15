@@ -1,3 +1,6 @@
+networks:
+  reverse-proxy:
+
 services:
   app:
     image: pcandido/full-stack/app
@@ -5,9 +8,26 @@ services:
     build: ./app
     ports:
       - 8080:8080
+    networks:
+      - reverse-proxy
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health-check"]
       start_period: 5s
       interval: 10s
       timeout: 10s
       retries: 3
+
+  nginx:
+    image: pcandido/full-stack/nginx
+    container_name: nginx
+    build: ./nginx
+    volumes:
+      - ./nginx/config:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+    ports:
+      - 80:80
+    networks:
+      - reverse-proxy
+    depends_on:
+      app:
+        condition: service_healthy
