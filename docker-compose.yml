@@ -155,3 +155,17 @@ services:
       - prometheus-net
     extra_hosts:
       - "host.docker.internal: 172.23.5.254"
+
+  init:
+    image: pcandido/full-stack/init
+    container_name: init
+    build: init
+    environment:
+      KIBANA_HOST: kibana:5601
+    networks:
+      - monitor
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      kibana:
+        condition: service_healthy
