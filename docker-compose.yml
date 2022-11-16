@@ -1,6 +1,14 @@
 networks:
   reverse-proxy:
   monitor:
+  prometheus-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.23.0.0/16
+          ip_range: 172.23.5.0/24
+          gateway: 172.23.5.254
 
 volumes:
   elasticsearch-volume:
@@ -117,6 +125,35 @@ services:
       - 3000:3000
     networks:
       - monitor
+
+  node_exporter:
+    image: pcandido/full-stack/node-exporter
+    container_name: node_exporter
+    build: node-exporter
+    user: root
+    command:
+      - '--path.rootfs=/host'
+    pid: host
+    volumes:
+      - '/:/host:ro'
+    network_mode: host
+    ports:
+      - 9100:9100
+
+  prometheus:
+    image: pcandido/full-stack/prometheus
+    container_name: prometheus
+    build: prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - 9090:9090
+    networks:
+      - monitor
+      - prometheus-net
+    extra_hosts:
+      - "host.docker.internal: 172.23.5.254"
     depends_on:
-      elasticsearch:
-        condition: service_healthy
+      - node_exporter
