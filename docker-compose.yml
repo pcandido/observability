@@ -28,6 +28,8 @@ services:
       - 80:80
     networks:
       - reverse-proxy
+    depends_on:
+      - app
 
   elasticsearch:
     image: pcandido/full-stack/elasticsearch
