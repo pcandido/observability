@@ -22,6 +22,7 @@ services:
     volumes:
       - ./ui/config:/etc/nginx/conf.d
       - ./ui/static:/ui/static
+      - ./ui/logs:/var/log/nginx
     ports:
       - 80:80
 
@@ -120,6 +121,7 @@ services:
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
       - ./nginx/logs:/var/log/nginx
       - ./app/logs:/var/log/app
+      - ./ui/logs:/var/log/ui
     ports:
       - 5067:5067
     networks:

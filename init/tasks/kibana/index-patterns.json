@@ -2973,23 +2973,6 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
-            "completed": {
-                "count": 0,
-                "name": "completed",
-                "type": "boolean",
-                "esTypes": [
-                    "boolean"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "boolean"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
             "config.buildNum": {
                 "count": 0,
                 "name": "config.buildNum",
@@ -11094,7 +11077,6 @@
                 "count": 0,
                 "conflictDescriptions": {
                     "text": [
-                        "app-2022.11.16",
                         "app-2022.11.17"
                     ],
                     "object": [
@@ -13268,23 +13250,6 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
-            "task.action": {
-                "count": 0,
-                "name": "task.action",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
             "task.attempts": {
                 "count": 0,
                 "name": "task.attempts",
@@ -13298,74 +13263,6 @@
                 "readFromDocValues": true,
                 "format": {
                     "id": "number"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.cancellable": {
-                "count": 0,
-                "name": "task.cancellable",
-                "type": "boolean",
-                "esTypes": [
-                    "boolean"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "boolean"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.description": {
-                "count": 0,
-                "name": "task.description",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.id": {
-                "count": 0,
-                "name": "task.id",
-                "type": "number",
-                "esTypes": [
-                    "long"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "number"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.node": {
-                "count": 0,
-                "name": "task.node",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "string"
                 },
                 "shortDotsEnable": false,
                 "isMapped": true
@@ -13404,23 +13301,6 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
-            "task.parent_task_id": {
-                "count": 0,
-                "name": "task.parent_task_id",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
             "task.retryAt": {
                 "count": 0,
                 "name": "task.retryAt",
@@ -13451,23 +13331,6 @@
                 "readFromDocValues": true,
                 "format": {
                     "id": "date"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.running_time_in_nanos": {
-                "count": 0,
-                "name": "task.running_time_in_nanos",
-                "type": "number",
-                "esTypes": [
-                    "long"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "number"
                 },
                 "shortDotsEnable": false,
                 "isMapped": true
@@ -13519,23 +13382,6 @@
                 "readFromDocValues": true,
                 "format": {
                     "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.start_time_in_millis": {
-                "count": 0,
-                "name": "task.start_time_in_millis",
-                "type": "number",
-                "esTypes": [
-                    "long"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "number"
                 },
                 "shortDotsEnable": false,
                 "isMapped": true
@@ -13619,23 +13465,6 @@
                 "searchable": true,
                 "aggregatable": false,
                 "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "task.type": {
-                "count": 0,
-                "name": "task.type",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
                 "format": {
                     "id": "string"
                 },
@@ -14695,718 +14524,6 @@
                 "searchable": false,
                 "aggregatable": false,
                 "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            }
-        },
-        "typeMeta": {},
-        "fieldFormats": {},
-        "runtimeFieldMap": {},
-        "fieldAttrs": {},
-        "allowNoIndex": false
-    },
-    {
-        "title": "app-*",
-        "timeFieldName": "@timestamp",
-        "fields": {
-            "@timestamp": {
-                "count": 0,
-                "name": "@timestamp",
-                "type": "date",
-                "esTypes": [
-                    "date"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "date"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "@version": {
-                "count": 0,
-                "name": "@version",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "@version.keyword": {
-                "count": 0,
-                "name": "@version.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "@version"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "_id": {
-                "count": 0,
-                "name": "_id",
-                "type": "string",
-                "esTypes": [
-                    "_id"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "_index": {
-                "count": 0,
-                "name": "_index",
-                "type": "string",
-                "esTypes": [
-                    "_index"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "_score": {
-                "count": 0,
-                "name": "_score",
-                "type": "number",
-                "scripted": false,
-                "searchable": false,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "number"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "_source": {
-                "count": 0,
-                "name": "_source",
-                "type": "_source",
-                "esTypes": [
-                    "_source"
-                ],
-                "scripted": false,
-                "searchable": false,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "_source"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "_type": {
-                "count": 0,
-                "name": "_type",
-                "type": "string",
-                "esTypes": [
-                    "_type"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.ephemeral_id": {
-                "count": 0,
-                "name": "agent.ephemeral_id",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.ephemeral_id.keyword": {
-                "count": 0,
-                "name": "agent.ephemeral_id.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "agent.ephemeral_id"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.hostname": {
-                "count": 0,
-                "name": "agent.hostname",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.hostname.keyword": {
-                "count": 0,
-                "name": "agent.hostname.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "agent.hostname"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.id": {
-                "count": 0,
-                "name": "agent.id",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.id.keyword": {
-                "count": 0,
-                "name": "agent.id.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "agent.id"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.name": {
-                "count": 0,
-                "name": "agent.name",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.name.keyword": {
-                "count": 0,
-                "name": "agent.name.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "agent.name"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.type": {
-                "count": 0,
-                "name": "agent.type",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.type.keyword": {
-                "count": 0,
-                "name": "agent.type.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "agent.type"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.version": {
-                "count": 0,
-                "name": "agent.version",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "agent.version.keyword": {
-                "count": 0,
-                "name": "agent.version.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "agent.version"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "ecs.version": {
-                "count": 0,
-                "name": "ecs.version",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "ecs.version.keyword": {
-                "count": 0,
-                "name": "ecs.version.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "ecs.version"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "host.name": {
-                "count": 0,
-                "name": "host.name",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "host.name.keyword": {
-                "count": 0,
-                "name": "host.name.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "host.name"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "input.type": {
-                "count": 0,
-                "name": "input.type",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "input.type.keyword": {
-                "count": 0,
-                "name": "input.type.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "input.type"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "level": {
-                "count": 0,
-                "name": "level",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "level.keyword": {
-                "count": 0,
-                "name": "level.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "level"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "log.file.path": {
-                "count": 0,
-                "name": "log.file.path",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "log.file.path.keyword": {
-                "count": 0,
-                "name": "log.file.path.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "log.file.path"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "log.offset": {
-                "count": 0,
-                "name": "log.offset",
-                "type": "number",
-                "esTypes": [
-                    "long"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "format": {
-                    "id": "number"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "message": {
-                "count": 0,
-                "name": "message",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "message.keyword": {
-                "count": 0,
-                "name": "message.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "message"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "service": {
-                "count": 0,
-                "name": "service",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "service.keyword": {
-                "count": 0,
-                "name": "service.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "service"
-                    }
-                },
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "tags": {
-                "count": 0,
-                "name": "tags",
-                "type": "string",
-                "esTypes": [
-                    "text"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": false,
-                "readFromDocValues": false,
-                "format": {
-                    "id": "string"
-                },
-                "shortDotsEnable": false,
-                "isMapped": true
-            },
-            "tags.keyword": {
-                "count": 0,
-                "name": "tags.keyword",
-                "type": "string",
-                "esTypes": [
-                    "keyword"
-                ],
-                "scripted": false,
-                "searchable": true,
-                "aggregatable": true,
-                "readFromDocValues": true,
-                "subType": {
-                    "multi": {
-                        "parent": "tags"
-                    }
-                },
                 "format": {
                     "id": "string"
                 },
@@ -18140,6 +17257,3453 @@
                 "subType": {
                     "multi": {
                         "parent": "tags"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            }
+        },
+        "typeMeta": {},
+        "fieldFormats": {},
+        "runtimeFieldMap": {},
+        "fieldAttrs": {},
+        "allowNoIndex": false
+    },
+    {
+        "title": "app-*",
+        "timeFieldName": "@timestamp",
+        "fields": {
+            "@timestamp": {
+                "count": 0,
+                "name": "@timestamp",
+                "type": "date",
+                "esTypes": [
+                    "date"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "date"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "@version": {
+                "count": 0,
+                "name": "@version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "@version.keyword": {
+                "count": 0,
+                "name": "@version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "@version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_id": {
+                "count": 0,
+                "name": "_id",
+                "type": "string",
+                "esTypes": [
+                    "_id"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_index": {
+                "count": 0,
+                "name": "_index",
+                "type": "string",
+                "esTypes": [
+                    "_index"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_score": {
+                "count": 0,
+                "name": "_score",
+                "type": "number",
+                "scripted": false,
+                "searchable": false,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_source": {
+                "count": 0,
+                "name": "_source",
+                "type": "_source",
+                "esTypes": [
+                    "_source"
+                ],
+                "scripted": false,
+                "searchable": false,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "_source"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_type": {
+                "count": 0,
+                "name": "_type",
+                "type": "string",
+                "esTypes": [
+                    "_type"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.ephemeral_id": {
+                "count": 0,
+                "name": "agent.ephemeral_id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.ephemeral_id.keyword": {
+                "count": 0,
+                "name": "agent.ephemeral_id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.ephemeral_id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.hostname": {
+                "count": 0,
+                "name": "agent.hostname",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.hostname.keyword": {
+                "count": 0,
+                "name": "agent.hostname.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.hostname"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.id": {
+                "count": 0,
+                "name": "agent.id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.id.keyword": {
+                "count": 0,
+                "name": "agent.id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.name": {
+                "count": 0,
+                "name": "agent.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.name.keyword": {
+                "count": 0,
+                "name": "agent.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.type": {
+                "count": 0,
+                "name": "agent.type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.type.keyword": {
+                "count": 0,
+                "name": "agent.type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.version": {
+                "count": 0,
+                "name": "agent.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.version.keyword": {
+                "count": 0,
+                "name": "agent.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "ecs.version": {
+                "count": 0,
+                "name": "ecs.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "ecs.version.keyword": {
+                "count": 0,
+                "name": "ecs.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "ecs.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "host.name": {
+                "count": 0,
+                "name": "host.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "host.name.keyword": {
+                "count": 0,
+                "name": "host.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "host.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "input.type": {
+                "count": 0,
+                "name": "input.type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "input.type.keyword": {
+                "count": 0,
+                "name": "input.type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "input.type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "level": {
+                "count": 0,
+                "name": "level",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "level.keyword": {
+                "count": 0,
+                "name": "level.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "level"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.file.path": {
+                "count": 0,
+                "name": "log.file.path",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.file.path.keyword": {
+                "count": 0,
+                "name": "log.file.path.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "log.file.path"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.offset": {
+                "count": 0,
+                "name": "log.offset",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "message": {
+                "count": 0,
+                "name": "message",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "message.keyword": {
+                "count": 0,
+                "name": "message.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "message"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "service": {
+                "count": 0,
+                "name": "service",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "service.keyword": {
+                "count": 0,
+                "name": "service.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "service"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "tags": {
+                "count": 0,
+                "name": "tags",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "tags.keyword": {
+                "count": 0,
+                "name": "tags.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "tags"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            }
+        },
+        "typeMeta": {},
+        "fieldFormats": {},
+        "runtimeFieldMap": {},
+        "fieldAttrs": {},
+        "allowNoIndex": false
+    },
+    {
+        "title": "ui-error-*",
+        "timeFieldName": "@timestamp",
+        "fields": {
+            "@timestamp": {
+                "count": 0,
+                "name": "@timestamp",
+                "type": "date",
+                "esTypes": [
+                    "date"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "date"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "@version": {
+                "count": 0,
+                "name": "@version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "@version.keyword": {
+                "count": 0,
+                "name": "@version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "@version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_id": {
+                "count": 0,
+                "name": "_id",
+                "type": "string",
+                "esTypes": [
+                    "_id"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_index": {
+                "count": 0,
+                "name": "_index",
+                "type": "string",
+                "esTypes": [
+                    "_index"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_score": {
+                "count": 0,
+                "name": "_score",
+                "type": "number",
+                "scripted": false,
+                "searchable": false,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_source": {
+                "count": 0,
+                "name": "_source",
+                "type": "_source",
+                "esTypes": [
+                    "_source"
+                ],
+                "scripted": false,
+                "searchable": false,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "_source"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_type": {
+                "count": 0,
+                "name": "_type",
+                "type": "string",
+                "esTypes": [
+                    "_type"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.ephemeral_id": {
+                "count": 0,
+                "name": "agent.ephemeral_id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.ephemeral_id.keyword": {
+                "count": 0,
+                "name": "agent.ephemeral_id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.ephemeral_id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.hostname": {
+                "count": 0,
+                "name": "agent.hostname",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.hostname.keyword": {
+                "count": 0,
+                "name": "agent.hostname.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.hostname"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.id": {
+                "count": 0,
+                "name": "agent.id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.id.keyword": {
+                "count": 0,
+                "name": "agent.id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.name": {
+                "count": 0,
+                "name": "agent.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.name.keyword": {
+                "count": 0,
+                "name": "agent.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.type": {
+                "count": 0,
+                "name": "agent.type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.type.keyword": {
+                "count": 0,
+                "name": "agent.type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.version": {
+                "count": 0,
+                "name": "agent.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.version.keyword": {
+                "count": 0,
+                "name": "agent.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "ecs.version": {
+                "count": 0,
+                "name": "ecs.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "ecs.version.keyword": {
+                "count": 0,
+                "name": "ecs.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "ecs.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "host.name": {
+                "count": 0,
+                "name": "host.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "host.name.keyword": {
+                "count": 0,
+                "name": "host.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "host.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "input.type": {
+                "count": 0,
+                "name": "input.type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "input.type.keyword": {
+                "count": 0,
+                "name": "input.type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "input.type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.file.path": {
+                "count": 0,
+                "name": "log.file.path",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.file.path.keyword": {
+                "count": 0,
+                "name": "log.file.path.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "log.file.path"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.offset": {
+                "count": 0,
+                "name": "log.offset",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "message": {
+                "count": 0,
+                "name": "message",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "message.keyword": {
+                "count": 0,
+                "name": "message.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "message"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "tags": {
+                "count": 0,
+                "name": "tags",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "tags.keyword": {
+                "count": 0,
+                "name": "tags.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "tags"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            }
+        },
+        "typeMeta": {},
+        "fieldFormats": {},
+        "runtimeFieldMap": {},
+        "fieldAttrs": {},
+        "allowNoIndex": false
+    },
+    {
+        "title": "ui-access-*",
+        "timeFieldName": "@timestamp",
+        "fields": {
+            "@timestamp": {
+                "count": 0,
+                "name": "@timestamp",
+                "type": "date",
+                "esTypes": [
+                    "date"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "date"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "@version": {
+                "count": 0,
+                "name": "@version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "@version.keyword": {
+                "count": 0,
+                "name": "@version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "@version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_id": {
+                "count": 0,
+                "name": "_id",
+                "type": "string",
+                "esTypes": [
+                    "_id"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_index": {
+                "count": 0,
+                "name": "_index",
+                "type": "string",
+                "esTypes": [
+                    "_index"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_score": {
+                "count": 0,
+                "name": "_score",
+                "type": "number",
+                "scripted": false,
+                "searchable": false,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_source": {
+                "count": 0,
+                "name": "_source",
+                "type": "_source",
+                "esTypes": [
+                    "_source"
+                ],
+                "scripted": false,
+                "searchable": false,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "_source"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "_type": {
+                "count": 0,
+                "name": "_type",
+                "type": "string",
+                "esTypes": [
+                    "_type"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.ephemeral_id": {
+                "count": 0,
+                "name": "agent.ephemeral_id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.ephemeral_id.keyword": {
+                "count": 0,
+                "name": "agent.ephemeral_id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.ephemeral_id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.hostname": {
+                "count": 0,
+                "name": "agent.hostname",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.hostname.keyword": {
+                "count": 0,
+                "name": "agent.hostname.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.hostname"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.id": {
+                "count": 0,
+                "name": "agent.id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.id.keyword": {
+                "count": 0,
+                "name": "agent.id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.name": {
+                "count": 0,
+                "name": "agent.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.name.keyword": {
+                "count": 0,
+                "name": "agent.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.type": {
+                "count": 0,
+                "name": "agent.type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.type.keyword": {
+                "count": 0,
+                "name": "agent.type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.version": {
+                "count": 0,
+                "name": "agent.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "agent.version.keyword": {
+                "count": 0,
+                "name": "agent.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "agent.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "application": {
+                "count": 0,
+                "name": "application",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "application.keyword": {
+                "count": 0,
+                "name": "application.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "application"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "ecs.version": {
+                "count": 0,
+                "name": "ecs.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "ecs.version.keyword": {
+                "count": 0,
+                "name": "ecs.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "ecs.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "host.name": {
+                "count": 0,
+                "name": "host.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "host.name.keyword": {
+                "count": 0,
+                "name": "host.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "host.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "hostname": {
+                "count": 0,
+                "name": "hostname",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "hostname.keyword": {
+                "count": 0,
+                "name": "hostname.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "hostname"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "input.type": {
+                "count": 0,
+                "name": "input.type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "input.type.keyword": {
+                "count": 0,
+                "name": "input.type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "input.type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.file.path": {
+                "count": 0,
+                "name": "log.file.path",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.file.path.keyword": {
+                "count": 0,
+                "name": "log.file.path.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "log.file.path"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "log.offset": {
+                "count": 0,
+                "name": "log.offset",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.accept": {
+                "count": 0,
+                "name": "request.headers.accept",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.accept-encoding": {
+                "count": 0,
+                "name": "request.headers.accept-encoding",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.accept-encoding.keyword": {
+                "count": 0,
+                "name": "request.headers.accept-encoding.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.accept-encoding"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.accept-language": {
+                "count": 0,
+                "name": "request.headers.accept-language",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.accept-language.keyword": {
+                "count": 0,
+                "name": "request.headers.accept-language.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.accept-language"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.accept.keyword": {
+                "count": 0,
+                "name": "request.headers.accept.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.accept"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.content-length": {
+                "count": 0,
+                "name": "request.headers.content-length",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.content-length.keyword": {
+                "count": 0,
+                "name": "request.headers.content-length.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.content-length"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.content-type": {
+                "count": 0,
+                "name": "request.headers.content-type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.content-type.keyword": {
+                "count": 0,
+                "name": "request.headers.content-type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.content-type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.host": {
+                "count": 0,
+                "name": "request.headers.host",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.host.keyword": {
+                "count": 0,
+                "name": "request.headers.host.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.host"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.user-agent": {
+                "count": 0,
+                "name": "request.headers.user-agent",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.user-agent.keyword": {
+                "count": 0,
+                "name": "request.headers.user-agent.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.user-agent"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.x-forwarded-for": {
+                "count": 0,
+                "name": "request.headers.x-forwarded-for",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.x-forwarded-for.keyword": {
+                "count": 0,
+                "name": "request.headers.x-forwarded-for.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.x-forwarded-for"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.x-request-id": {
+                "count": 0,
+                "name": "request.headers.x-request-id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.headers.x-request-id.keyword": {
+                "count": 0,
+                "name": "request.headers.x-request-id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.headers.x-request-id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.httpVersion": {
+                "count": 0,
+                "name": "request.httpVersion",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.httpVersion.keyword": {
+                "count": 0,
+                "name": "request.httpVersion.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.httpVersion"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.method": {
+                "count": 0,
+                "name": "request.method",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.method.keyword": {
+                "count": 0,
+                "name": "request.method.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.method"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.device": {
+                "count": 0,
+                "name": "request.parsed-user-agent.device",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.device.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.device.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.device"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.major": {
+                "count": 0,
+                "name": "request.parsed-user-agent.major",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.major.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.major.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.major"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.minor": {
+                "count": 0,
+                "name": "request.parsed-user-agent.minor",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.minor.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.minor.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.minor"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.name": {
+                "count": 0,
+                "name": "request.parsed-user-agent.name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.name.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_full": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_full",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_full.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_full.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os_full"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_major": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_major",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_major.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_major.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os_major"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_minor": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_minor",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_minor.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_minor.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os_minor"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_name": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_name",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_name.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_name.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os_name"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_patch": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_patch",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_patch.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_patch.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os_patch"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_version": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.os_version.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.os_version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.os_version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.patch": {
+                "count": 0,
+                "name": "request.parsed-user-agent.patch",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.patch.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.patch.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.patch"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.version": {
+                "count": 0,
+                "name": "request.parsed-user-agent.version",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.parsed-user-agent.version.keyword": {
+                "count": 0,
+                "name": "request.parsed-user-agent.version.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.parsed-user-agent.version"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.remoteAddress": {
+                "count": 0,
+                "name": "request.remoteAddress",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.remoteAddress.keyword": {
+                "count": 0,
+                "name": "request.remoteAddress.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.remoteAddress"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.request-id": {
+                "count": 0,
+                "name": "request.request-id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.request-id.keyword": {
+                "count": 0,
+                "name": "request.request-id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.request-id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.timestamp": {
+                "count": 0,
+                "name": "request.timestamp",
+                "type": "date",
+                "esTypes": [
+                    "date"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "date"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.url": {
+                "count": 0,
+                "name": "request.url",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.url.keyword": {
+                "count": 0,
+                "name": "request.url.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.url"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.x-forwarded-for": {
+                "count": 0,
+                "name": "request.x-forwarded-for",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "request.x-forwarded-for.keyword": {
+                "count": 0,
+                "name": "request.x-forwarded-for.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "request.x-forwarded-for"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.bytesSent": {
+                "count": 0,
+                "name": "response.bytesSent",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.cache-control": {
+                "count": 0,
+                "name": "response.headers.cache-control",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.cache-control.keyword": {
+                "count": 0,
+                "name": "response.headers.cache-control.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "response.headers.cache-control"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.content-type": {
+                "count": 0,
+                "name": "response.headers.content-type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.content-type.keyword": {
+                "count": 0,
+                "name": "response.headers.content-type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "response.headers.content-type"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.vary": {
+                "count": 0,
+                "name": "response.headers.vary",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.vary.keyword": {
+                "count": 0,
+                "name": "response.headers.vary.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "response.headers.vary"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.x-request-id": {
+                "count": 0,
+                "name": "response.headers.x-request-id",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.headers.x-request-id.keyword": {
+                "count": 0,
+                "name": "response.headers.x-request-id.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "response.headers.x-request-id"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.responseTime": {
+                "count": 0,
+                "name": "response.responseTime",
+                "type": "number",
+                "esTypes": [
+                    "float"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.statusCode": {
+                "count": 0,
+                "name": "response.statusCode",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.timestamp": {
+                "count": 0,
+                "name": "response.timestamp",
+                "type": "date",
+                "esTypes": [
+                    "date"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "date"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.upstreamAddr": {
+                "count": 0,
+                "name": "response.upstreamAddr",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.upstreamAddr.keyword": {
+                "count": 0,
+                "name": "response.upstreamAddr.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "response.upstreamAddr"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "response.upstreamTime": {
+                "count": 0,
+                "name": "response.upstreamTime",
+                "type": "number",
+                "esTypes": [
+                    "float"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "tags": {
+                "count": 0,
+                "name": "tags",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "tags.keyword": {
+                "count": 0,
+                "name": "tags.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "tags"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "type": {
+                "count": 0,
+                "name": "type",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "type.keyword": {
+                "count": 0,
+                "name": "type.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "type"
                     }
                 },
                 "format": {
