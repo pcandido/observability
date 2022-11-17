@@ -15,6 +15,16 @@ volumes:
   grafana-volume:
 
 services:
+  ui:
+    image: pcandido/full-stack/ui
+    container_name: ui
+    build: ui
+    volumes:
+      - ./ui/config:/etc/nginx/conf.d
+      - ./ui/static:/ui/static
+    ports:
+      - 80:80
+
   app:
     image: pcandido/full-stack/app
     container_name: app
@@ -34,7 +44,7 @@ services:
       - ./nginx/config:/etc/nginx/conf.d
       - ./nginx/logs:/var/log/nginx
     ports:
-      - 80:80
+      - 8880:80
       - 8881:8881
       - 8882:8882
     networks:
