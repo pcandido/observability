@@ -72,6 +72,9 @@ services:
       - 5601:5601
     networks:
       - monitor
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
 
   logstash:
     image: pcandido/full-stack/logstash
@@ -132,10 +135,10 @@ services:
     build: node-exporter
     user: root
     command:
-      - '--path.rootfs=/host'
+      - --path.rootfs=/host
     pid: host
     volumes:
-      - '/:/host:ro'
+      - /:/host:ro
     network_mode: host
     ports:
       - 9100:9100
