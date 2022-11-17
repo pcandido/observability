@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Prometheus",
+    "type": "prometheus",
+    "url": "http://prometheus:9090",
+    "access": "proxy",
+    "basicAuth": false
+  },
+  {
+    "name": "Elasticsearch",
+    "type": "elasticsearch",
+    "url": "http://elasticsearch:9200",
+    "access": "proxy",
+    "basicAuth": false
+  }
+]

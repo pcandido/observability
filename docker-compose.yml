@@ -165,6 +165,7 @@ services:
     build: init
     environment:
       KIBANA_HOST: kibana:5601
+      GRAFANA_HOST: grafana:3000
     networks:
       - monitor
     depends_on:
