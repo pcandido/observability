@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node ./kibana/scripts/create-index-patterns.js
+node ./kibana/init.js
