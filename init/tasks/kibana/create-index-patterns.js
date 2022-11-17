@@ -1,7 +1,6 @@
 #!/node
 
-const fs = require('fs/promises')
-const path = require('path')
+const expectedIndexPatterns = require('./index-patterns.json')
 
 const kibanaHost = process.env.KIBANA_HOST ?? 'localhost:5601'
 
@@ -9,17 +8,21 @@ main()
 
 async function main() {
   const existentPatterns = await getExistentIndexPattern()
+  const existentPatternsTitles = new Set(existentPatterns.map(a => a.title))
 
-  const indexPatternDir = path.join(__dirname, '..', 'index-patterns')
-  const indexPatterns = await getIndexPatterns(indexPatternDir)
+  for (const expectedIndexPattern of expectedIndexPatterns) {
+    console.group(expectedIndexPattern.title)
+    try {
+      if (existentPatternsTitles.has(expectedIndexPattern.title)) {
+        console.log('skiping: it already exists')
+        continue
+      }
 
-  const newIndexPatterns = indexPatterns.filter(a => !existentPatterns.find(b => b.title === a.title))
-
-  for (const indexPattern of newIndexPatterns) {
-    console.group(`creating/updating pattern: ${indexPattern.title}`)
-    const created = await create(indexPattern)
-    existentPatterns.push(created)
-    console.groupEnd()
+      const created = await create(expectedIndexPattern)
+      existentPatterns.push(created)
+    } finally {
+      console.groupEnd()
+    }
   }
 
   await setDefault(existentPatterns.find(a => a.title === '*'))
@@ -27,16 +30,9 @@ async function main() {
   console.log('done')
 }
 
-async function getIndexPatterns(dir) {
-  const files = await fs.readdir(dir)
-  const rawData = await Promise.all(files.map(file => fs.readFile(path.join(dir, file))))
-  const data = rawData.map(item => JSON.parse(item))
-  return data.sort((a, b) => a.title == '*' ? -1 : b.title == '*' ? 1 : a.title - b.title)
-}
-
 async function getExistentIndexPattern() {
   const res = await fetch(`http://${kibanaHost}/api/saved_objects/_find?type=index-pattern`)
-  if (!res.ok) throw new Error('Was not possible to get index-patterns list')
+  if (!res.ok) throw new Error('It was not possible to get index-patterns list')
 
   const resJson = await res.json()
   return resJson.saved_objects.map(a => ({
@@ -58,7 +54,7 @@ async function create(indexPattern) {
     })
   })
 
-  if (!res.ok) throw new Error(`Was not possible to create ${index_pattern.title}: ${await res.text()}`)
+  if (!res.ok) throw new Error(`It was not possible to create ${index_pattern.title}: ${await res.text()}`)
 
   const created = (await res.json()).index_pattern
   console.log(`created/updated: ${created.id}`)
@@ -77,7 +73,7 @@ async function setDefault(indexPattern) {
     })
   })
 
-  if (!resDefault.ok) throw new Error(`Was not possible to define ${indexPattern.title} (${indexPattern.id}) as default`)
+  if (!resDefault.ok) throw new Error(`It was not possible to define ${indexPattern.title} (${indexPattern.id}) as default`)
 
   console.log(`${indexPattern.title} (${indexPattern.id}) set as default`)
 }
