@@ -16,7 +16,7 @@ volumes:
 
 services:
   ui:
-    image: pcandido/full-stack/ui
+    image: full-stack/ui
     container_name: ui
     build: ui
     volumes:
@@ -27,7 +27,7 @@ services:
       - 80:80
 
   app:
-    image: pcandido/full-stack/app
+    image: full-stack/app
     container_name: app
     build: app
     volumes:
@@ -38,7 +38,7 @@ services:
       - reverse-proxy
 
   nginx:
-    image: pcandido/full-stack/nginx
+    image: full-stack/nginx
     container_name: nginx
     build: nginx
     volumes:
@@ -55,7 +55,7 @@ services:
       - app
 
   elasticsearch:
-    image: pcandido/full-stack/elasticsearch
+    image: full-stack/elasticsearch
     container_name: elasticsearch
     build:
       context: elasticsearch
@@ -71,7 +71,7 @@ services:
       - monitor
 
   kibana:
-    image: pcandido/full-stack/kibana
+    image: full-stack/kibana
     container_name: kibana
     build:
       context: kibana
@@ -88,7 +88,7 @@ services:
         condition: service_healthy
 
   logstash:
-    image: pcandido/full-stack/logstash
+    image: full-stack/logstash
     container_name: logstash
     build:
       context: logstash
@@ -110,7 +110,7 @@ services:
         condition: service_healthy
 
   filebeat:
-    image: pcandido/full-stack/filebeat
+    image: full-stack/filebeat
     container_name: filebeat
     build:
       context: filebeat
@@ -131,7 +131,7 @@ services:
         condition: service_healthy
 
   grafana:
-    image: pcandido/full-stack/grafana
+    image: full-stack/grafana
     container_name: grafana
     build: grafana
     volumes:
@@ -142,7 +142,7 @@ services:
       - monitor
 
   node_exporter:
-    image: pcandido/full-stack/node-exporter
+    image: full-stack/node-exporter
     container_name: node_exporter
     build: node-exporter
     user: root
@@ -156,7 +156,7 @@ services:
       - 9100:9100
 
   prometheus:
-    image: pcandido/full-stack/prometheus
+    image: full-stack/prometheus
     container_name: prometheus
     build: prometheus
     command:
@@ -172,7 +172,7 @@ services:
       - "host.docker.internal: 172.23.5.254"
 
   init:
-    image: pcandido/full-stack/init
+    image: full-stack/init
     container_name: init
     build: init
     environment:
