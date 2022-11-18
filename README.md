@@ -1,4 +1,4 @@
-# full-stack
+# observability
 
 This project aims to explore some ways to monitor an application with logs and metrics.
 
