@@ -84,7 +84,3 @@ Select Prometheus as datasource, and `Import`.
 Check out the result :)
 
 ![Grafana](docs/grafana.png)
-
-## TODOs
-[ ] Ship grafana with some dashboards
-[ ] Add restart directive on containers
