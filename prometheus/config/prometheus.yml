@@ -9,4 +9,4 @@ scrape_configs:
     metrics_path: /
     static_configs:
       - targets:
-          - nginx:8882
+          - nginx-be:8882

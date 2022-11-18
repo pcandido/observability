@@ -2973,6 +2973,23 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
+            "completed": {
+                "count": 0,
+                "name": "completed",
+                "type": "boolean",
+                "esTypes": [
+                    "boolean"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "boolean"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
             "config.buildNum": {
                 "count": 0,
                 "name": "config.buildNum",
@@ -8116,6 +8133,45 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
+            "migrationVersion.spaces-usage-stats": {
+                "count": 0,
+                "name": "migrationVersion.spaces-usage-stats",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "migrationVersion.spaces-usage-stats.keyword": {
+                "count": 0,
+                "name": "migrationVersion.spaces-usage-stats.keyword",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "subType": {
+                    "multi": {
+                        "parent": "migrationVersion.spaces-usage-stats"
+                    }
+                },
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
             "migrationVersion.task": {
                 "count": 0,
                 "name": "migrationVersion.task",
@@ -11077,7 +11133,7 @@
                 "count": 0,
                 "conflictDescriptions": {
                     "text": [
-                        "app-2022.11.17"
+                        "app-2022.11.18"
                     ],
                     "object": [
                         ".apm-agent-configuration",
@@ -13250,6 +13306,23 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
+            "task.action": {
+                "count": 0,
+                "name": "task.action",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
             "task.attempts": {
                 "count": 0,
                 "name": "task.attempts",
@@ -13263,6 +13336,74 @@
                 "readFromDocValues": true,
                 "format": {
                     "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.cancellable": {
+                "count": 0,
+                "name": "task.cancellable",
+                "type": "boolean",
+                "esTypes": [
+                    "boolean"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "boolean"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.description": {
+                "count": 0,
+                "name": "task.description",
+                "type": "string",
+                "esTypes": [
+                    "text"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": false,
+                "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.id": {
+                "count": 0,
+                "name": "task.id",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.node": {
+                "count": 0,
+                "name": "task.node",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "string"
                 },
                 "shortDotsEnable": false,
                 "isMapped": true
@@ -13301,6 +13442,23 @@
                 "shortDotsEnable": false,
                 "isMapped": true
             },
+            "task.parent_task_id": {
+                "count": 0,
+                "name": "task.parent_task_id",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
             "task.retryAt": {
                 "count": 0,
                 "name": "task.retryAt",
@@ -13331,6 +13489,23 @@
                 "readFromDocValues": true,
                 "format": {
                     "id": "date"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.running_time_in_nanos": {
+                "count": 0,
+                "name": "task.running_time_in_nanos",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
                 },
                 "shortDotsEnable": false,
                 "isMapped": true
@@ -13382,6 +13557,23 @@
                 "readFromDocValues": true,
                 "format": {
                     "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.start_time_in_millis": {
+                "count": 0,
+                "name": "task.start_time_in_millis",
+                "type": "number",
+                "esTypes": [
+                    "long"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
+                "format": {
+                    "id": "number"
                 },
                 "shortDotsEnable": false,
                 "isMapped": true
@@ -13465,6 +13657,23 @@
                 "searchable": true,
                 "aggregatable": false,
                 "readFromDocValues": false,
+                "format": {
+                    "id": "string"
+                },
+                "shortDotsEnable": false,
+                "isMapped": true
+            },
+            "task.type": {
+                "count": 0,
+                "name": "task.type",
+                "type": "string",
+                "esTypes": [
+                    "keyword"
+                ],
+                "scripted": false,
+                "searchable": true,
+                "aggregatable": true,
+                "readFromDocValues": true,
                 "format": {
                     "id": "string"
                 },
@@ -14538,7 +14747,7 @@
         "allowNoIndex": false
     },
     {
-        "title": "nginx-access-*",
+        "title": "fe-access-*",
         "timeFieldName": "@timestamp",
         "fields": {
             "@timestamp": {
@@ -16639,7 +16848,7 @@
         "allowNoIndex": false
     },
     {
-        "title": "nginx-error-*",
+        "title": "fe-error-*",
         "timeFieldName": "@timestamp",
         "fields": {
             "@timestamp": {
@@ -17985,7 +18194,7 @@
         "allowNoIndex": false
     },
     {
-        "title": "ui-error-*",
+        "title": "be-error-*",
         "timeFieldName": "@timestamp",
         "fields": {
             "@timestamp": {
@@ -18619,7 +18828,7 @@
         "allowNoIndex": false
     },
     {
-        "title": "ui-access-*",
+        "title": "be-access-*",
         "timeFieldName": "@timestamp",
         "fields": {
             "@timestamp": {

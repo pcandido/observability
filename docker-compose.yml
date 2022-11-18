@@ -15,17 +15,6 @@ volumes:
   grafana-volume:
 
 services:
-  ui:
-    image: full-stack/ui
-    container_name: ui
-    build: ui
-    volumes:
-      - ./ui/config:/etc/nginx/conf.d
-      - ./ui/static:/ui/static
-      - ./ui/logs:/var/log/nginx
-    ports:
-      - 80:80
-
   app:
     image: full-stack/app
     container_name: app
@@ -37,13 +26,13 @@ services:
     networks:
       - reverse-proxy
 
-  nginx:
-    image: full-stack/nginx
-    container_name: nginx
-    build: nginx
+  nginx-be:
+    image: full-stack/nginx-be
+    container_name: nginx-be
+    build: nginx-be
     volumes:
-      - ./nginx/config:/etc/nginx/conf.d
-      - ./nginx/logs:/var/log/nginx
+      - ./nginx-be/config:/etc/nginx/conf.d
+      - ./nginx-be/logs:/var/log/nginx
     ports:
       - 8880:80
       - 8881:8881
@@ -53,6 +42,17 @@ services:
       - monitor
     depends_on:
       - app
+
+  nginx-fe:
+    image: full-stack/nginx-fe
+    container_name: nginx-fe
+    build: nginx-fe
+    volumes:
+      - ./nginx-fe/config:/etc/nginx/conf.d
+      - ./nginx-fe/static:/app/static
+      - ./nginx-fe/logs:/var/log/nginx
+    ports:
+      - 80:80
 
   elasticsearch:
     image: full-stack/elasticsearch
@@ -119,9 +119,9 @@ services:
     entrypoint: "filebeat -e -strict.perms=false"
     volumes:
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - ./nginx/logs:/var/log/nginx
+      - ./nginx-be/logs:/var/log/nginx-be
+      - ./nginx-fe/logs:/var/log/nginx-fe
       - ./app/logs:/var/log/app
-      - ./ui/logs:/var/log/ui
     ports:
       - 5067:5067
     networks:
