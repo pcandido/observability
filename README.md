@@ -86,6 +86,5 @@ Check out the result :)
 ![Grafana](docs/grafana.png)
 
 ## TODOs
-[ ] Explicite all versions
 [ ] Ship grafana with some dashboards
 [ ] Add restart directive on containers

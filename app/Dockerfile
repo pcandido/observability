@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:18-alpine
 
 ENV PORT=8080
 HEALTHCHECK --start-period=5s --interval=10s --timeout=10s --retries=5 \
