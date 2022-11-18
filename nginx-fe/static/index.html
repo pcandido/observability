@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FullStack</title>
-    <meta charset="utf8"/>
-  </head>
-  <body>
-    <ul>
-      <li><a href="http://localhost:80">NGInx FE</a></li>
-      <li><a href="http://localhost:8880">NGInx BE</a></li>
-      <li><a href="http://localhost:8080">API - NodeJS</a></li>
-      <li><a href="http://localhost:3000">Grafana (Metrics)</a></li>
-      <li><a href="http://localhost:5601">Kibana (Logs)</a></li>
-    </ul>
-  </body>
+
+<head>
+  <title>FullStack</title>
+  <meta charset="utf8" />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <aside>
+    <a href="http://localhost:5601" target="_blank"><img alt="Kibana" src="img/kibana-logo.png" /></a>
+    <a href="http://localhost:3000" target="_blank"><img alt="Grafana" src="img/grafana-logo.png" /></a>
+  </aside>
+  <main>
+    <h1> Calculate Fibonacci Sequence </h1>
+    <div>
+      <input type="number" min="1" max="40" id="value" value="5" />
+      <button id="calculate">Calculate</button>
+    </div>
+    <div id="result">
+
+    </div>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+#value, #calculate, #result {
+  font-size: 1.5em;
+}
+
+#value {
+  width: 100px;
+}
+
+#result{
+  margin-top: 20px;
+  font-family: monospace;
+}
+
+aside{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  margin: 0 -8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+aside > a > img{
+  width: 150px;
+}
+
