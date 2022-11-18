@@ -25,6 +25,8 @@ The next image shows the connection between those services
 
 ![Relationship Diagram](docs/relationship.excalidraw.png)
 
+*Disclaimer: the log format of NGInx instances was changed to a very long format. It is not recommended, since it may generate very big files and imply high costs.*
+
 ## Running
 
 The whole project was composed in a docker-compose file, so to start it, you can use:
