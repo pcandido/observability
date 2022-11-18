@@ -136,6 +136,10 @@ services:
     build: grafana
     volumes:
       - grafana-volume:/var/lib/grafana
+      - ./grafana/config/grafana.ini:/etc/grafana/grafana.ini
+      - ./grafana/provisioning/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
+      - ./grafana/provisioning/dashboards.yaml:/etc/grafana/provisioning/dashboards/dashboards.yaml
+      - ./grafana/provisioning/dashboards:/etc/grafana/dashboards
     ports:
       - 3000:3000
     networks:

@@ -68,20 +68,7 @@ Visit [elastic.co](https://www.elastic.co/) to lean more about Kibana.
 
 If you want to get an overview of your system instead of get detailed logs, you can check the metrics. In this stack we used [Grafana](http://localhost:3000) to show them.
 
-The default username and password is `admin` and `admin` respectively.
-
-The `init` service has already created the datasources, so you can start exploring. If you are not experient on Grafana, you can get some ready dashboads on Grafana's portal. Here is some interesting ones:
-
-* [Host vitals (node exporter)](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
-* [NGInx VTS statistics](https://grafana.com/grafana/dashboards/14824-nginx-vts-stats/)
-
-Just get their IDs and paste [here](http://localhost:3000/dashboard/import):
-
-![Import Dashboard](docs/import-dashboard.png)
-
-Select Prometheus as datasource, and `Import`.
-
-![Import Dashboard](docs/import-dashboard-2.png)
+The default username and password is `admin` and `admin` respectively, but you can explore as anonymous.
 
 Check out the result :)
 
